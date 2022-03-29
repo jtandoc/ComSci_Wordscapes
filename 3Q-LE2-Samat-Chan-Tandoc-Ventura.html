@@ -175,21 +175,27 @@
     </script>
   </head>
   <body>
+	<div class="container" style="background-color: #98c1d9; padding-bottom: 249px;">
     <br>
-    <p id="input"></p>
+	<div class="display" style="padding-top: 200px; padding-left: 230px; padding-right: 230px;">
+    <p id="input" style="font-size: 35px; background-color: #e0fbfc; padding: 5px; border-radius: 10px;"></p>
+    </div>
     <br>
-    <button id="A" type="button" onclick="A()">A</button>
-    <button id="E" type="button" onclick="E()">E</button>
-    <button id="D" type="button" onclick="D()">D</button>
-    <button id="B" type="button" onclick="B()">B</button>
-    <button id="S" type="button" onclick="S()">S</button>
-    <button id="I" type="button" onclick="I()">I</button>
-    <button id="C" type="button" onclick="C()">C</button>
-	<button type="button" onclick="RESET()">RESET</button>
-	<button type="button" onclick="SUBMIT()">SUBMIT</button>
+	<div class="letters" style="padding-left: 200px;">
+    <button id="A" type="button" button class="btn-primary" style="font-size: 30px; padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px; border-radius: 5px;" onclick="A()">A</button>
+    <button id="E" type="button" button class="btn-primary" style="font-size: 30px; padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px; border-radius: 5px;" onclick="E()">E</button>
+    <button id="D" type="button" button class="btn-primary" style="font-size: 30px; padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px; border-radius: 5px;" onclick="D()">D</button>
+    <button id="B" type="button" button class="btn-primary" style="font-size: 30px; padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px; border-radius: 5px;" onclick="B()">B</button>
+    <button id="S" type="button" button class="btn-primary" style="font-size: 30px; padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px; border-radius: 5px;" onclick="S()">S</button>
+    <button id="I" type="button" button class="btn-primary" style="font-size: 30px; padding-left: 25px; padding-right: 25px; padding-top: 8px; padding-bottom: 8px; border-radius: 5px;" onclick="I()">I</button>
+    <button id="C" type="button" button class="btn-primary" style="font-size: 30px; padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px; border-radius: 5px;" onclick="C()">C</button>
+	<button type="button" button class="btn-danger" style="font-size: 30px; padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px; border-radius: 5px;" onclick="RESET()">RESET</button>
+	<button type="button" button class="btn-success" style="font-size: 30px; padding-left: 20px; padding-right: 20px; padding-top: 8px; padding-bottom: 8px; border-radius: 5px;" onclick="SUBMIT()">SUBMIT</button>
+    </div>
 	<br>
 	<br>
 	<p id="wordD">Found Words: </p>
 	<div>Score: </div><p id="scoreD">0</p>
+    </div>
   </body>
 </html>
