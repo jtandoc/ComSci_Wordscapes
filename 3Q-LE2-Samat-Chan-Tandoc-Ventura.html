@@ -9,6 +9,7 @@
 	<script>
 	var word = "";
 	var wordM = "";
+	var score = 0;
       function A() {
         document.getElementById("input").innerHTML += "A";
 		document.getElementById("A").style.visibility = "hidden";
@@ -67,94 +68,115 @@
 		if (word == "AID"){
 		wordM = "AID";
 		word = "";
+		score = score + 100;
 		}
 		else if (word == "BAD"){
 		wordM = "BAD";
 		word = "";
+		score = score + 100;
 		}
 		else if (word == "BED"){
 		wordM = "BED";
 		word = "";
+		score = score + 100;
 		}
 		else if (word == "DIE"){
 		wordM = "DIE";
 		word = "";
+		score = score + 100;
 		}
 		else if (word == "SAC"){
 		wordM = "SAC";
 		word = "";
+		score = score + 100;
 		}
 		else if (word == "SAD"){
 		wordM = "SAD";
 		word = "";
+		score = score + 100;
 		}
 		else if (word == "SEA"){
 		wordM = "SEA";
 		word = "";
+		score = score + 100;
 		}
 		else if (word == "ACID"){
 		wordM = "ACID";
 		word = "";
+		score = score + 200;
 		}
 		else if (word == "BASE"){
 		wordM = "BASE";
 		word = "";
+		score = score + 200;
 		}
 		else if (word == "BEAD"){
 		wordM = "BEAD";
 		word = "";
+		score = score + 200;
 		}
 		else if (word == "DICE"){
 		wordM = "DICE";
 		word = "";
+		score = score + 200;
 		}
 		else if (word == "ICED"){
 		wordM = "ICED";
 		word = "";
+		score = score + 200;
 		}
 		else if (word == "SIDE"){
 		wordM = "SIDE";
 		word = "";
+		score = score + 200;
 		}
 		else if (word == "ACIDS"){
 		wordM = "ACIDS";
 		word = "";
+		score = score + 300;
 		}
 		else if (word == "ABIDE"){
 		wordM = "ABIDE";
 		word = "";
+		score = score + 300;
 		}
 		else if (word == "BASIC"){
 		wordM = "BASIC";
 		word = "";
+		score = score + 300;
 		}
 		else if (word == "CASED"){
 		wordM = "CASED";
 		word = "";
+		score = score + 300;
 		}
 		else if (word == "IDEAS"){
 		wordM = "IDEAS";
 		word = "";
+		score = score + 300;
 		}
 		else if (word == "ABIDES"){
 		wordM = "ABIDES";
 		word = "";
+		score = score + 600;
 		}
 		else if (word == "BIASED"){
 		wordM = "BIASED";
 		word = "";
+		score = score + 600;
 		}
 		else {
 		alert("The word you entered is either wrong or not included in the mystery words. Please try again.");
 		word = "";
 		}
 		document.getElementById("wordD").innerHTML += wordM + " ";
+		document.getElementById("scoreD").innerHTML = score;
 	  }
     </script>
   </head>
   <body>
     <br>
-    <div id="input"></div>
+    <p id="input"></p>
     <br>
     <button id="A" type="button" onclick="A()">A</button>
     <button id="E" type="button" onclick="E()">E</button>
@@ -167,6 +189,7 @@
 	<button type="button" onclick="SUBMIT()">SUBMIT</button>
 	<br>
 	<br>
-	<div id="wordD"></div>
+	<p id="wordD">Found Words: </p>
+	<div>Score: </div><p id="scoreD">0</p>
   </body>
 </html>
