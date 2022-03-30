@@ -202,6 +202,7 @@
 		}
 		else {
 		alert("The word you entered is either wrong or not included in the mystery words. Please try again.");
+		wordM = "";
 		word = "";
 		}
 		document.getElementById("wordD").innerHTML += wordM + " ";
@@ -232,9 +233,10 @@
 
 	<br>
 	<div class="scorelist" style="padding-left: 100px; padding-top: 20px; padding-bottom: 20px; background-color: #b8e3ff; border-radius: 10px; font-family: Bungee;">
-	<h3 id="wordD">Found Words: </h3>
-	<div><h3>Score: </h3>
-	</div>
+	<h3>Found Words: </h3>
+	<h3  id="wordD"></h3>
+	<br>
+	<h3>Score: </h3>
 	<h3 id="scoreD">0</h3>
     </div>
 
